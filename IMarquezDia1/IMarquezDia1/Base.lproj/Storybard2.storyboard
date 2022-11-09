@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ViewController" customModule="IMarquezDia1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhQ-x7-7fE">
+                                <rect key="frame" x="174" y="393" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-LL-aJz">
+                                <rect key="frame" x="170" y="83" width="70" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Lunes"/>
+                                <connections>
+                                    <action selector="ControlBotones:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="52b-PZ-XMj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N60-Xi-SXR">
+                                <rect key="frame" x="156.66666666666666" y="226" width="77" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Martes"/>
+                                <connections>
+                                    <action selector="ControlBotones:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0jL-3G-Fii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLX-DS-bAj">
+                                <rect key="frame" x="146" y="524" width="98" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Miercoles"/>
+                                <connections>
+                                    <action selector="ControlBotones:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MzZ-Bj-kGw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZP-MQ-0qQ">
+                                <rect key="frame" x="160.66666666666666" y="646" width="69" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Jeves"/>
+                                <connections>
+                                    <action selector="ControlBotones:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xru-YT-QBQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LbB-LL-aJz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FKf-BE-T2F"/>
+                            <constraint firstItem="aLX-DS-bAj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Oi5-xN-NKg"/>
+                            <constraint firstItem="N60-Xi-SXR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RvT-ZF-rTC"/>
+                            <constraint firstItem="hZP-MQ-0qQ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Tfw-mt-MQa"/>
+                            <constraint firstItem="LbB-LL-aJz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="10" id="XjE-J0-NQf"/>
+                            <constraint firstItem="aLX-DS-bAj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ZFv-YR-0cL"/>
+                            <constraint firstItem="fhQ-x7-7fE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="fb8-HZ-3Rp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ControlLabel" destination="fhQ-x7-7fE" id="ZLs-U8-3MZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
